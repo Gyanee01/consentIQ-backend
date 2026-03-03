@@ -1,0 +1,12 @@
+fastapi==0.104.1
+uvicorn==0.24.0.post1
+pydantic==2.5.2
+transformers==4.35.2
+torch
+playwright==1.40.0
+playwright-stealth==1.0.6
+beautifulsoup4==4.12.2
+html2text==2020.1.16
+fake-useragent==1.4.0
+pypdf==3.17.1
+requests==2.31.0
