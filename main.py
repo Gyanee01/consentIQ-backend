@@ -11,6 +11,7 @@ import html2text
 import random
 import io
 import requests
+import os
 from pypdf import PdfReader
 from fake_useragent import UserAgent
 
@@ -198,4 +199,4 @@ async def analyze_policy(request: PolicyRequest):
     }
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=int(os.getenv("PORT", "8000")))
